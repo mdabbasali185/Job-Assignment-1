@@ -3,3 +3,42 @@
   margin: 0;
   padding: 0;
 }
+.wrapper {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+img {
+  width: 100%;
+  height: 250px;
+}
+.img-title {
+  position: relative;
+}
+.img-heading {
+  position: absolute;
+  background: #000;
+  color: white;
+  padding: 10px 20px;
+}
+.popUp {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(14, 14, 14, 0.8);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-200%);
+  transition: all 1s ease-in-out;
+}
+
+.popUp img {
+  max-width: 450px;
+  height: 450px;
+  padding: 20px;
+}
