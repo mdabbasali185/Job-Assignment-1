@@ -42,3 +42,16 @@ img {
   height: 450px;
   padding: 20px;
 }
+.popUp.active {
+  transform: translateX(0);
+}
+#cancel {
+  position: absolute;
+  background: #000;
+  color: white;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 60px;
+}
